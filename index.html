@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teruo Michishita Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Vega2 -->
+    <link rel="stylesheet" href="./vegas/vegas.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./preloader.css">
+</head>
+
+<body>
+
+    <!-- preloader -->
+
+    <section id="preloader">
+
+
+        <div class="lines">
+            <div class="line h_line1"></div>
+            <div class="line h_line2"></div>
+            <div class="line h_line3"></div>
+            <div class="line v_line4"></div>
+            <div class="line v_line5"></div>
+            <div class="line v_line6"></div>
+        </div>
+
+        <div class="pre_content">
+            <h1 class="pre_title didot_bold" data-fill="Teruo's portfolio">Teruo's portfolio
+                <div class='preloader-dots'>
+                    <div class='dot'></div>
+                    <div class='dot'></div>
+                    <div class='dot'></div>
+                </div>
+            </h1>
+        </div>
+    </section>
+    <div class="revelal_layer1 hide">
+        <div style="background:gray" class="layer"></div>
+        <div style="background:#202020" class="layer"></div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Teruo Michishita Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mygoal">MyGoal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSf2R3uIC-tX6FS26kSjurw6wTSgW8kpalch5AjHkd65qByf-w/viewform">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Media Icons -->
+                    <a href="https://github.com/michishita-teruo/" target="_blank">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                            alt="GitHub" width="30" height="30" class="icon mx-2">
+                    </a>
+                    <!-- <a href="https://twitter.com/yourusername" target="_blank">
+                        <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" width="30"
+                            height="30" class="icon mx-2">
+                    </a>
+                    <a href="https://www.instagram.com/yourusername" target="_blank">
+                        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+                            alt="Instagram" width="30" height="30" class="icon mx-2">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                        <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt="LinkedIn" width="30"
+                            height="30" class="icon mx-2">
+                    </a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 目標 -->
+    <section id="mygoal" class="mt-5 py-5 bg-light">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="section_title display-4 ">私の目標</h1>
+                <p class="lead">エンジニアを目指す背景と動機</p>
+                <hr class="my-4">
+                <p>私は学生の頃から趣味で自作パソコンの制作やパーツの交換を行っていました。</p>
+                <p>この経験を通じて、ハードウェア構成に関する知識と関心を得ることができました</p>
+                <p>業務では長らく製造業や建設業での仕事を通じて、身体を動かす作業に携わってまいりました。</p>
+                <p>しかしながら、新しい技術の導入が進まない職場環境には違和感を感じており、</p>
+                <p>より先進的で挑戦的な職場での仕事に魅力を感じるようになりました。</p>
+                <p>新しい技術に挑戦することで自身のスキルを向上させ、仕事に新たな価値を加えることができる環境に期待を寄せています。</p>
+                <hr class="my-4">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-2">
+                    <h5 class="card-title mb-md-2">学習活動</h5>
+                    <p class="card-text lh-lg">
+                        Webプログラミング職業訓練校でのフロントエンド構築科を受講し、HTML5、CSS3、JavaScript、PHPの基礎を学びつつ、実践的なプロジェクトで3～4人のチームと協力してWebサイトの構築を行っています。制作課題や担当箇所の明確な分担を通じて、プロジェクトの進捗を共有し、効果的なチームワークを学んでいます。
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-2">
+                    <h5 class="card-title mb-md-2">自習の活用</h5>
+                    <p class="card-text lh-lg">学習サイト：ninjacode や Progate を自主的に活用して基礎の復習から応用までのスキルを向上させています。
+                        <br>YouTube活用：英語に慣れるためにも海外のBroCodez氏のYouTubeチャンネルなどでプログラミング学習コンテンツを積極的に参考にしています。
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-2">
+                    <h5 class="card-title mb-md-2">今後の課題</h5>
+                    <p class="card-text lh-lg">
+                        現在学習中のスキルは初歩的な基礎に過ぎません。特に、React、Vue.jsなどのフロントエンドフレームワークや関連するツールの進化に追いつくために、日々新しい技術への挑戦を欠かしません。これにより、最新の技術トレンドに敏感で、プロジェクトに最適なツールやライブラリの選定ができるよう努めます。
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skill -->
+    <section id="skill" class="mt-5 py-5 bg-gray">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="section_title display-4 ">SKILL</h1>
+                <hr class="my-4">
+                <div class="d-flex justify-content-center row ">
+
+                    <dl class="bar-chart-001 col-lg-6">
+                        <dt>HTML</dt>
+                        <dd style="width: 90%; background-color: #ca5430">90%</dd>
+                        <dt>CSS</dt>
+                        <dd style="width: 90%; background-color: #0986c4">90%</dd>
+                        <dt>JavaScript</dt>
+                        <dd style="width: 70%; background-color: #e6c41c">70%</dd>
+                        <dt>PHP</dt>
+                        <dd style="width: 40%; background-color: #4d6574">40%</dd>
+                        <dt>jQuery</dt>
+                        <dd style="width: 70%; background-color: #005fa6">70%</dd>
+                        <dt>Bootstrap</dt>
+                        <dd style="width: 80%; background-color: #120c10">80%</dd>
+                        <dt>Figma</dt>
+                        <dd style="width: 50%; background-color: #ff6c5b">50%</dd>
+                        <dt>StableDiffusion</dt>
+                        <dd style="width: 60%; background-color: #ea9e56">60%</dd>
+                    </dl>
+
+                    <div class="col-lg-6 row d-flex align-items-center flex-wrap gap-4">
+                        <!--  -->
+
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right" data-bs-content="基本的なHTML構造を理解し、複雑なセクションやフォーム構造も構築可能"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/html5.com.png" alt="html.icon" class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="レスポンシブデザイン、アニメーション、フレキシブルボックスなどの高度なCSS機能を扱い、スタイルの一貫性を保つ能力がある"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/css.com.png" alt="css.icon" class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="DOM操作、非同期処理、イベントハンドリングなどの基本的なJavaScript概念を理解できる"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/javascript.png" alt="javascript.icon"
+                                    class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="PHPの基本構文や基本的なデータベース連携が理解できるが、まだ高度なトピックやセキュリティ対策に向けて学習が必要。"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/php.png" alt="php.icon" class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="jQueryを使用してDOMの操作やイベントハンドリングができ、基本的なアニメーションやエフェクトも実装可能"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/jQuery.png" alt="jQuery.icon" class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="Bootstrapを使用してレスポンシブなウェブサイトの構築ができ、各コンポーネントの適切な利用ができる"
+                                data-bs-original-title="" title="">
+                                <i class="bi bi-bootstrap-fill" style="font-size: 2rem;"></i>
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-content="Figmaを使用してデザインの基本的な作成とコラボレーションができるが、まだ高度なデザイン機能に慣れる必要がある"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/figma.png" alt="figmai.con" class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                        <div class="pie-chart-002">
+                            <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="right" data-bs-content="StableDiffusionのライブラリを使用しテーマに沿った簡単なAI画像生成が可能"
+                                data-bs-original-title="" title="">
+                                <img src="./img/icon/StableDiffusion.png" alt="jQuery.icon"
+                                    class="skill_icon img-fluid ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="work" class="mt-5 py-5 bg-light">
+        <div class="container">
+            <h1 class="section_title display-4 ">My Works</h1>
+            <p class="lead">制作物</p>
+            <div class="row">
+                <!-- Work Item 01 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan01.jpg"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan02.jpg"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan03.jpg"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan04.jpg"
+                                                alt="Fourth slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan05.jpg"
+                                                alt="Fifth slide">
+                                        </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only"></span>
+                                    </a>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>北関東水族館（グループ制作）</strong></h5>
+                                    <p class="card-text">
+                                        <strong>制作時間：</strong>約42時間（WEB制作を始めてから3ヶ月目）<br>
+                                        <strong>コンセプト：</strong>チームでの協力を重視し...
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        詳しく読む
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>北関東水族館（グループ制作）</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- ここに記事の残り部分を表示します。 -->
+                                            <!-- mobileの場合１枚、タブレット２枚の画像 -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/kitakantou_aquarium/suizokukan01.jpg"
+                                                        class="img-fluid" alt="kitakantou_aquarium01">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/kitakantou_aquarium/suizokukan02.jpg"
+                                                        class="img-fluid" alt="kitakantou_aquarium02">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/kitakantou_aquarium/suizokukan03.jpg"
+                                                        class="img-fluid" alt="kitakantou_aquarium03">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから3ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        チームでの協力を重視し、家族連れ向けの水族館ウェブサイトを制作
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        初めにFigmaのプラグインを使いデザインの方向性を共有し、計画を話合いモバイルファーストで制作を開始しました。
+                                                        私は各ページ共通のナビゲーションメニューとメインヴィジュアルやスライダーを担当しました。
+                                                        動画のアスペクト比を固定しているので表示領域足りなくなった場合、足りない左右の部分を覆う形でぼかしの背景動画を挿入する点を工夫しました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作時間内に完成させるには計画に余裕をを持って時間配分を行う事で、ページの統合する時の不具合があった場合でも時間に余裕を持って対応できると感じました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        CSSの記述ルールを初めに決めていなかった為、ページの統合の際にCSSの修正が発生しました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        チームでの開発は計画性が重要であると学びました。次回からは、作業を始める前にルールを明確にすることを心掛けます。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/aquarium/index.html"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item 01 end-->
+
+                <!-- Work Item 02 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin01.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin02.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin03.jpg" alt="Third slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators2"
+                                            role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators2"
+                                            role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>北関東学院（職業訓練校）</strong></h5>
+                                        <p class="card-text">
+                                            <strong>制作時間：</strong>約42時間（WEB制作を始めてから2ヶ月目）<br>
+                                            <strong>コンセプト：</strong>既存の職業訓練校のウェブ...
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal2">
+                                            詳しく読む
+                                        </button>
+                                    </div>
+                            </article>
+
+                            <!-- Modal2 -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel2">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>北関東学院（職業訓練校）</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin01.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin01">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin02.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin02">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin03.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin03">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから2ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        既存の職業訓練校のウェブサイトから新規リニューアルする。制作中に改善計画書を作り、完成後に他の受講生に修正点とフィードバックをもらう。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        メインビジュアルには若い年齢層を取り込めるように漫画風のAI画像を生成して、VEGA2のjQueryを用いて表示しています。
+                                                        Javascriptでメインビジュアルに出現するタイプライター式テキストを10種類の中からランダムに表示させています。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作期間内にレスポンシブ対応したハンバーガーメニューの作成が間に合わなかった。現在は修正済み
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        jQueryのslideToggleの理解に時間がかかった為、期間内にレスポンシブ対応まで完成しなかった。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作を通じて、新たな技術の理解に時間を十分に確保することの重要性を学びました。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/KITAKANTO2/"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item 02 end-->
+
+                <!-- Work Item 03 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin01.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin02.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin03.jpg" alt="Third slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators3"
+                                            role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators3"
+                                            role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>北関東学院（職業訓練校）</strong></h5>
+                                        <p class="card-text">
+                                            <strong>制作時間：</strong>約42時間（WEB制作を始めてから2ヶ月目）<br>
+                                            <strong>コンセプト：</strong>既存の職業訓練校のウェブ...
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal3">
+                                            詳しく読む
+                                        </button>
+                                    </div>
+                            </article>
+
+                            <!-- Modal3 -->
+                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel3">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>北関東学院（職業訓練校）</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin01.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin01">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin02.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin02">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/kitakantougakuin/kitakantougakuin03.jpg"
+                                                        class="img-fluid" alt="kitakantougakuin03">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから2ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        既存の職業訓練校のウェブサイトから新規リニューアルする。制作中に改善計画書を作り、完成後に他の受講生に修正点とフィードバックをもらう。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        メインビジュアルには若い年齢層を取り込めるように漫画風のAI画像を生成して、VEGA2のjQueryを用いて表示しています。
+                                                        Javascriptでメインビジュアルに出現するタイプライター式テキストを10種類の中からランダムに表示させています。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作期間内にレスポンシブ対応したハンバーガーメニューの作成が間に合わなかった。現在は修正済み
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        jQueryのslideToggleの理解に時間がかかった為、期間内にレスポンシブ対応まで完成しなかった。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作を通じて、新たな技術の理解に時間を十分に確保することの重要性を学びました。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/KITAKANTO2/"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item 03 end-->
+            </div>
+            <!-- work row1 end -->
+            <div class="row">
+                <!-- Work Item 04 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"></li>
+                                        <!-- <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"></li>
+                                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"></li>
+                                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"></li> -->
+
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/no_image_logo.png" alt="First slide">
+                                        </div>
+                                        <!-- <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan02.jpg"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan03.jpg"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan04.jpg"
+                                                alt="Fourth slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/kitakantou_aquarium/suizokukan05.jpg"
+                                                alt="Fifth slide">
+                                        </div> -->
+                                    </div>
+
+                                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only"></span>
+                                    </a> -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>no website</strong></h5>
+                                    <p class="card-text">
+                                        <strong>制作時間：</strong>約42時間（WEB制作を始めてから3ヶ月目）<br>
+                                        <strong>コンセプト：</strong>チームでの協力を重視し...
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal4">
+                                        詳しく読む
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Modal4 -->
+                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel4">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>no website</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから3ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        チームでの協力を重視し、家族連れ向けの水族館ウェブサイトを制作
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        初めにFigmaのプラグインを使いデザインの方向性を共有し、計画を話合いモバイルファーストで制作を開始しました。
+                                                        私は各ページ共通のナビゲーションメニューとメインヴィジュアルやスライダーを担当しました。
+                                                        動画のアスペクト比を固定しているので表示領域足りなくなった場合、足りない左右の部分を覆う形でぼかしの背景動画を挿入する点を工夫しました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作時間内に完成させるには計画に余裕をを持って時間配分を行う事で、ページの統合する時の不具合があった場合でも時間に余裕を持って対応できると感じました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        CSSの記述ルールを初めに決めていなかった為、ページの統合の際にCSSの修正が発生しました。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        チームでの開発は計画性が重要であると学びました。次回からは、作業を始める前にルールを明確にすることを心掛けます。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/aquarium/index.html"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item 04 end-->
+
+                <!-- Work Item 05 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"></li>
+                                        <!-- <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"></li> -->
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/no_image_logo.png" alt="First slide">
+                                        </div>
+                                        <!-- <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin02.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100"
+                                                src="./img/kitakantougakuin/kitakantougakuin03.jpg" alt="Third slide">
+                                    </div> -->
+                                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators5"
+                                            role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators5"
+                                            role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a> -->
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>no website</strong></h5>
+                                        <p class="card-text">
+                                            <strong>制作時間：</strong>約42時間（WEB制作を始めてから2ヶ月目）<br>
+                                            <strong>コンセプト：</strong>既存の職業訓練校のウェブ...
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal5">
+                                            詳しく読む
+                                        </button>
+                                    </div>
+                            </article>
+
+                            <!-- Modal5 -->
+                            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel5">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>no website</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから2ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        既存の職業訓練校のウェブサイトから新規リニューアルする。制作中に改善計画書を作り、完成後に他の受講生に修正点とフィードバックをもらう。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        メインビジュアルには若い年齢層を取り込めるように漫画風のAI画像を生成して、VEGA2のjQueryを用いて表示しています。
+                                                        Javascriptでメインビジュアルに出現するタイプライター式テキストを10種類の中からランダムに表示させています。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作期間内にレスポンシブ対応したハンバーガーメニューの作成が間に合わなかった。現在は修正済み
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        jQueryのslideToggleの理解に時間がかかった為、期間内にレスポンシブ対応まで完成しなかった。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作を通じて、新たな技術の理解に時間を十分に確保することの重要性を学びました。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/KITAKANTO2/"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Item 05 end-->
+
+
+                <!-- Work Item 06 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card h-100">
+                            <article>
+                                <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0"
+                                            class="active">
+                                        </li>
+                                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1">
+                                        </li>
+                                        <!-- <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"></li> -->
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/no_image_logo.png" alt="First slide">
+                                        </div>
+                                        <!-- <div class="carousel-item" data-interval="3000">
+                                                        <img class="d-block w-100"
+                                                            src="./img/kitakantougakuin/kitakantougakuin02.jpg"
+                                                            alt="Second slide">
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="3000">
+                                                        <img class="d-block w-100"
+                                                            src="./img/kitakantougakuin/kitakantougakuin03.jpg"
+                                                            alt="Third slide">
+                                                    </div> -->
+                                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators6"
+                                            role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators6"
+                                            role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only"></span>
+                                        </a> -->
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>no website</strong></h5>
+                                        <p class="card-text">
+                                            <strong>制作時間：</strong>約42時間（WEB制作を始めてから2ヶ月目）<br>
+                                            <strong>コンセプト：</strong>既存の職業訓練校のウェブ...
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#myModal6">
+                                            詳しく読む
+                                        </button>
+                                    </div>
+                            </article>
+
+                            <!-- Modal6 -->
+                            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel6">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <div class="d-flex justify-content-between w-100">
+                                                <h5 class="modal-title"><strong>not website</strong></h5>
+                                                <button type="button" class="btn btn-default"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-sm-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                                <div class="col d-none d-lg-block">
+                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>制作時間：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        約42時間（WEB制作を始めてから2ヶ月目）
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>コンセプト：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        既存の職業訓練校のウェブサイトから新規リニューアルする。制作中に改善計画書を作り、完成後に他の受講生に修正点とフィードバックをもらう。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>特徴：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        メインビジュアルには若い年齢層を取り込めるように漫画風のAI画像を生成して、VEGA2のjQueryを用いて表示しています。
+                                                        Javascriptでメインビジュアルに出現するタイプライター式テキストを10種類の中からランダムに表示させています。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>改善点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作期間内にレスポンシブ対応したハンバーガーメニューの作成が間に合わなかった。現在は修正済み
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>苦労した点：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        jQueryのslideToggleの理解に時間がかかった為、期間内にレスポンシブ対応まで完成しなかった。
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>学び：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        制作を通じて、新たな技術の理解に時間を十分に確保することの重要性を学びました。
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="https://michishita-teruo.github.io/KITAKANTO2/"
+                                                        class="btn btn-primary">サイトを確認</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-bs-dismiss="modal">閉じる</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item 06 end-->
+            </div>
+            <!-- work row2 end -->
+        </div>
+        <!-- container end -->
+    </section>
+    <!-- section Work end -->
+
+    <section id="profile" class="mt-5 py-5">
+        <div class="container">
+            <h1 class="section_title display-4  ">profile</h1>
+            <p class="lead">自己紹介</p>
+            <hr class="my-4">
+            <div class="col">
+                <img src="./img/about/profile01.jpg" class="profile01 img-thumbnail" alt="">
+            </div>
+            <p>氏名：道下 照夫</p>
+            <p>年齢：1987年生まれ（36歳）</p>
+            <p>学歴：高校卒</p>
+            <p>コメント：職人からエンジニアを目指しています</p>
+            <p>好きな事：
+                VSCodeやその他の開発ツールにおいて、使いやすさや作業効率を向上させるためにプラグインを積極的な利用し試行錯誤を行っています</p>
+        </div>
+        <div class="container">
+            <div class="row-cols-auto card-title">
+                <p class="lead">職歴</p>
+                <hr class="my-4">
+            </div>
+            <div class="work_box d-flex justify-content-between">
+
+                <div class="bar_animation col-1">
+
+                </div>
+                <div class="work_history col-11">
+                    <div class="row display-5">
+                        <p>飲食業：3年（ラーメン屋）</p>
+                        <div class="vegas03">
+                            <div class="card-body">
+                                <div class="card-text fs-3 overflow-hidden text-white">
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            高校卒業後；
+                                        </div>
+                                        <div class="col-sm-9 ">
+                                            近所のラーメン屋でフルタイムのアルバイトして働く
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            主な業務：
+                                        </div>
+                                        <div class="col-sm-9">
+                                            ホールスタッフ 調理補助 仕込み作業
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            資格取得：
+                                        </div>
+                                        <div class="col-sm-9">
+                                            店主の推薦で調理師免許取得
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_box d-flex justify-content-between">
+
+                <div class="bar_animation col-1">
+
+                </div>
+                <div class="work_history col-11">
+                    <div class="row display-5">
+                        <p>製造業:10年（金属加工）</p>
+                        <div class="vegas01">
+                            <div class="card-body">
+                                <div class="card-text fs-3 overflow-hidden text-white">
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            製造製品：
+                                        </div>
+                                        <div class="col-sm-9 ">
+                                            電力送電鉄塔 通信用無線鉄塔 建設用鉄骨材
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            主な業務：
+                                        </div>
+                                        <div class="col-sm-9">
+                                            金属加工（鉄工）半自動溶接 ガス溶接 機械金属加工 仮組検査
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_box d-flex justify-content-between">
+                <div class="bar_animation col-1"></div>
+                <div class="work_history col-11">
+                    <div class="row display-5">
+                        <p>建設業： 5年（足場、プラント施工管理）</p>
+                        <div class="vegas02" id="mainvisual02">
+                            <div class="card-body">
+                                <div class="card-text fs-3 overflow-hidden text-white">
+
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            <strong>取扱製品：</strong>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            新築または外壁リフォーム用の架設足場設置<br>
+                                            コンクリートプラントのブロック生産機械
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 lh-lg">
+                                        <div class="col-sm-3 text-sm-end">
+                                            <strong>携わった業務：</strong>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            足場の組立及び解体 中型トラックの運転 CAD施工図 チームの育成<br>
+                                            プラント施工管理 CAD機械設計 シーケンス制御 工程表管理
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-5 container">
+            <p class="text">現在はWEBプログラミングを学習し、ポートフォリオを作成中</p>
+        </div>
+
+    </section>
+
+    <!-- プログレスバー -->
+    <div id="progress"></div>
+    <!-- contact -->
+    <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf2R3uIC-tX6FS26kSjurw6wTSgW8kpalch5AjHkd65qByf-w/viewform?usp=pp_url">
+        <div id="contact_icon">
+            <span class="contact_icon_inner"></span>
+            <img src="./img/CONTACT.png" alt="">
+        </div>
+    </a>
+
+    <!-- section profile end -->
+
+    <footer class="footer mt-5 py-3 bg-dark" style="background-color: #96ada9;">
+        <div class="container">
+            <span class="text-white text-center">Thank you for watching all the way until the end.</span>
+        </div>
+    </footer>
+
+
+
+
+    <!--↓↓ script ↓↓  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js 読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!-- vegas.js -->
+    <script src="./vegas/vegas.js"></script>
+    <!-- main.js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

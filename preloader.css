@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+#preloader {
+    height: 100vh;
+}
+
+#preloader .lines {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+#preloader .lines .line:before {
+    background: #2b2b2b;
+    z-index: 9;
+}
+
+#preloader .h_line1::after,
+#preloader .h_line1:before,
+#preloader .h_line2::after,
+#preloader .h_line2:before,
+#preloader .h_line3::after,
+#preloader .h_line3:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background: #3e3e3e
+}
+
+#preloader .v_line4::after,
+#preloader .v_line4:before,
+#preloader .v_line5::after,
+#preloader .v_line5:before,
+#preloader .v_line6::after,
+#preloader .v_line6:before {
+    content: "";
+    position: fixed;
+    height: 3px;
+    width: 0;
+    background: #3e3e3e
+}
+
+#preloader .h_line1::after,
+#preloader .h_line1:before {
+    left: 6%
+}
+
+#preloader .h_line2::after,
+#preloader .h_line2:before {
+    left: 50%;
+    bottom: 0
+}
+
+#preloader .h_line3::after,
+#preloader .h_line3:before {
+    left: 94%
+}
+
+#preloader .v_line4::after,
+#preloader .v_line4:before {
+    top: 11%;
+    left: 0
+}
+
+#preloader .v_line5::after,
+#preloader .v_line5:before {
+    top: 50%;
+    right: 0
+}
+
+#preloader .v_line6::after,
+#preloader .v_line6:before {
+    top: 90%;
+    left: 0
+}
+
+#preloader .h_line1::after,
+#preloader .h_line2::after,
+#preloader .h_line3::after {
+    animation: fillh 2s forwards;
+}
+
+#preloader .v_line4::after,
+#preloader .v_line5::after,
+#preloader .v_line6::after {
+    animation: fillv 2s forwards;
+}
+
+#preloader .h_line1:before,
+#preloader .h_line2:before,
+#preloader .h_line3:before {
+    animation: fillhb 2s 3s forwards;
+}
+
+#preloader .v_line4:before,
+#preloader .v_line5:before,
+#preloader .v_line6:before {
+    animation: fillvb 2s 3s forwards;
+}
+
+@keyframes fillh {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes fillv {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fillhb {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes fillvb {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* 縦横線終わり */
+
+#preloader {
+    background: #191919;
+    display: table-cell;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    animation: textina 2s ease-in;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    z-index: 99996
+}
+
+.preloader-dots {
+    position: absolute;
+    text-align: center;
+    margin: -63px auto 0;
+    right: -47px;
+    letter-spacing: -8px
+}
+
+.preloader-dots .dot {
+    display: inline-block;
+    background: white;
+    height: 8px;
+    width: 8px;
+    opacity: .3;
+    border-radius: 50%;
+    animation: moveit 1.8s infinite
+}
+
+.dot:nth-child(2) {
+    animation-delay: .15s
+}
+
+.dot:nth-child(3) {
+    animation-delay: .3s
+}
+
+@keyframes moveit {
+    0% {
+        transform: translateY(0)
+    }
+
+    35% {
+        transform: translateY(0);
+        opacity: .3
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: .8
+    }
+
+    70% {
+        transform: translateY(3px);
+        opacity: .8
+    }
+
+    85% {
+        transform: translateY(-3px)
+    }
+}
+
+#preloader .pre_content {
+    color: #fff;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pre_title {
+    font-family: 'Merriweather', serif;
+    color: #3a3a3a;
+    display: inline-block;
+    font-size: 60px;
+    position: absolute;
+    opacity: 0;
+    height: 68px;
+    margin: 0;
+    line-height: 62px;
+    top: 50px;
+    left: 50px;
+    animation: textin .5s forwards 1.6s;
+}
+
+/* PC (Large devices) */
+@media (min-width: 992px) {
+    .pre_title {
+        font-size: 60px;
+        top: 13%;
+        left: 7%;
+    }
+}
+
+/* Tablet (Medium devices) */
+@media (max-width: 991.98px) {
+    .pre_title {
+        font-size: 40px;
+        top: 10%;
+        left: 8%;
+    }
+
+    .preloader-dots .dot {
+        margin-left: 8px;
+    }
+}
+
+/* Mobile (Small devices) */
+@media (max-width: 767.98px) {
+    .pre_title {
+        font-size: 32px;
+        top: 10%;
+        left: 11%;
+    }
+
+    .preloader-dots {
+        top: 67%;
+        right: -51px;
+    }
+
+    .preloader-dots .dot {
+        margin-left: 8px;
+    }
+}
+
+@keyframes textin {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.pre_title:before {
+    content: attr(data-fill);
+    position: absolute;
+    color: white;
+    height: 68px;
+    left: 0;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: filltext .9s forwards 2.5s;
+}
+
+@keyframes filltext {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* 背景レイヤ */
+.hide {
+    display: none;
+}
+
+.revelal_layer1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    height: 100vw;
+    z-index: 99999;
+    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 90deg) translate3d(0, 100%, 0);
+}
+
+.revelal_layer1 .layer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    animation: reveal1 1.5s cubic-bezier(.55, .055, .675, .19) forwards
+}
+
+.revelal_layer1 .layer:first-child {
+    animation: reveal1 1.5s cubic-bezier(.55, .055, .675, .19) forwards
+}
+
+.revelal_layer1 .layer:nth-child(2) {
+    animation-name: reveal2
+}
+
+.nav_revel .layer:first-child {
+    animation: reveal3 1.5s cubic-bezier(.55, .055, .675, .19) forwards
+}
+
+.nav_revel .layer:nth-child(2) {
+    animation-name: reveal4
+}
+
+@keyframes reveal1 {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    25%,
+    75% {
+        transform: translate3d(0, -100%, 0);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    100% {
+        transform: translate3d(0, -200%, 0)
+    }
+}
+
+@keyframes reveal2 {
+
+    0%,
+    12.5% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    37.5%,
+    62.5% {
+        transform: translate3d(0, -100%, 0);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    100%,
+    87.5% {
+        transform: translate3d(0, -200%, 0)
+    }
+}
+
+
+@keyframes reveal3 {
+
+    0%,
+    25% {
+        transform: translate3d(0, 0, 0);
+        animation-timing-function: cubic-bezier(.645, .045, .355, 1)
+    }
+
+    100%,
+    75% {
+        transform: translate3d(0, -200%, 0)
+    }
+}
+
+@keyframes textina {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
