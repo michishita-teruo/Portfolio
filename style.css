@@ -414,3 +414,13 @@ a {
 
     background: rgb(208, 208, 208, 0.199);
 }
+
+/* contact */
+
+.end-message {
+    display: none;
+}
+
+.false-message {
+    display: none;
+}
