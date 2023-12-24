@@ -72,8 +72,7 @@
                             <a class="nav-link" href="#profile">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSf2R3uIC-tX6FS26kSjurw6wTSgW8kpalch5AjHkd65qByf-w/viewform">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -1337,87 +1336,83 @@
         <div class="mt-5 container">
             <p class="text">現在はWEBプログラミングを学習し、ポートフォリオを作成中</p>
         </div>
+    </section>
 
-        <section id="contact" class="mt-5 py-5">
-            <div class="container">
-                <h1 class="section_title display-4  ">Contact</h1>
-                <p class="lead">お問い合わせ</p>
-                <hr class="my-4">
-            </div>
-            <div class="container">
-                <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdTD8jVeG-JovojnYNLnN7YoX8zcrjuXbQQKFUpLejwbKfGFQ/formResponse"
-                    id="from">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">名前</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name"
-                            name="entry.258282249" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">メールアドレス</label>
-                        <input type="email" class="form-control" id="email" name="entry.534588978"
-                            placeholder="name@example.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="gender" class="form-label">性別</label>
-                        <select class="form-select" id="gender" required>
-                            <option selected>選択</option>
-                            <option value="male">男性</option>
-                            <option value="female">女性</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">問い合わせ内容</label>
-                        <textarea class="form-control" id="message" rows="3" name="entry.303841590" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">送信</button>
-                </form>
-                <p class="end-message">お問い合わせありがとうございました</p>
-                <p class="false-message">送信失敗です</p>
-            </div>
-        </section>
+    <section id="contact" class="mt-5 py-5">
+        <div class="container">
+            <h1 class="section_title display-4  ">Contact</h1>
+            <p class="lead">お問い合わせ</p>
+            <hr class="my-4">
+        </div>
+        <div class="container">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf2R3uIC-tX6FS26kSjurw6wTSgW8kpalch5AjHkd65qByf-w/formResponse"
+                id="from" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">名前</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                        name="entry.1166385124" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">メールアドレス</label>
+                    <input type="email" class="form-control" id="email" name="entry.1763815050"
+                        placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">問い合わせ内容</label>
+                    <textarea class="form-control" id="message" rows="3" name="entry.903776397" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">送信</button>
+            </form>
 
-        <!-- プログレスバー -->
-        <div id="progress"></div>
-        <!-- contact -->
-        <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf2R3uIC-tX6FS26kSjurw6wTSgW8kpalch5AjHkd65qByf-w/viewform?usp=pp_url">
-            <div id="contact_icon">
-                <span class="contact_icon_inner"></span>
-                <img src="./img/CONTACT.png" alt="">
-            </div>
-        </a>
+        </div>
+    </section>
 
-        <!-- section profile end -->
+    <!-- プログレスバー -->
+    <div id="progress"></div>
+    <!-- contact -->
+    <a href="#contact">
+        <div id="contact_icon">
+            <span class="contact_icon_inner"></span>
+            <img src="./img/CONTACT.png" alt="">
+        </div>
+    </a>
 
-        <footer class="footer mt-5 py-3 bg-dark" style="background-color: #96ada9;">
-            <div class="container">
-                <span class="text-white text-center">Thank you for watching all the way until the end.</span>
-            </div>
-        </footer>
+    <!-- section profile end -->
+
+    <footer class="footer mt-5 py-3 bg-dark" style="background-color: #96ada9;">
+        <div class="container">
+            <span class="text-white text-center">Thank you for watching all the way until the end.</span>
+        </div>
+    </footer>
 
 
 
 
-        <!--↓↓ script ↓↓  -->
+    <!--↓↓ script ↓↓  -->
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="./js/jquery-3.7.1.min.js"></script>
-        <!-- Bootstrap js 読み込み -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
-        <!--IE11用-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
-        <!-- vegas.js -->
-        <script src="./vegas/vegas.js"></script>
-        <!-- main.js -->
-        <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap js 読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!-- vegas.js -->
+    <script src="./vegas/vegas.js"></script>
+    <!-- main.js -->
+    <script src="./main.js"></script>
+
+    <!-- サンクスページ移行 -->
+
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(submitted){window.location='thanks.html';}"></iframe>
 </body>
 
 </html>
