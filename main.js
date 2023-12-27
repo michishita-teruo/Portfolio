@@ -228,9 +228,9 @@ $(window).on('scroll', function () {
         var scaleFactor;
 
         if (scrollPosition + windowHeight / 2 < elementPosition || scrollPosition + windowHeight / 2 > elementPosition + windowHeight) {
-            scaleFactor = 0.4;
+            scaleFactor = 0.5;
         } else {
-            scaleFactor = 0.7;
+            scaleFactor = 0.8;
         }
 
         container.css('transform', 'scale(' + scaleFactor + ')');
