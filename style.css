@@ -377,7 +377,27 @@ a {
     transition: transform 0.5s;
 }
 
+/* For tablets */
+@media (max-width: 1024px) {
 
+    .vegas01,
+    .vegas02,
+    .vegas03 {
+        height: 600px;
+        width: 100%;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+
+    .vegas01,
+    .vegas02,
+    .vegas03 {
+        height: 450px;
+        width: 100%;
+    }
+}
 
 /* bar_animation */
 .work_box {
