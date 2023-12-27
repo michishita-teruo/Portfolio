@@ -155,7 +155,7 @@ $(window).on('load', function () {
 $(function () {
     var responsiveImage = [
         {
-            src: './img/about/about02.jpg',
+            src: './img/about/yousetu.jpg',
             video: {
                 src: [
                     './img/about/yousetu01.mp4',
