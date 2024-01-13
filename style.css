@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 
-* {
+*,
+body {
     margin: 0;
     padding: 0;
     vertical-align: bottom;
@@ -206,6 +207,11 @@ a {
     animation: fillup 2s ease forwards;
 }
 
+.pie-chart-002:hover {
+    border: 1px solid #929292;
+    filter: grayscale(10%);
+}
+
 @keyframes fillup {
     from {
         background-image: radial-gradient(#fff 55%, transparent 55%), conic-gradient(#e2e2e2 0% 100%);
@@ -215,7 +221,11 @@ a {
 .skillbtn {
     --bs-btn-padding-x: 0;
     --bs-btn-padding-y: 0;
+    border: none;
+
 }
+
+
 
 .pie-chart-002:nth-of-type(1) {
     background-image: radial-gradient(#fff 55%, transparent 55%), conic-gradient(#ca5430 90%, #e2e2e2 90% 100%);
@@ -260,7 +270,8 @@ a {
 }
 
 .hover-border:hover {
-    border: 1px solid #000; /* Change #000 to the color you want for the border */
+    border: 1px solid #000;
+    /* Change #000 to the color you want for the border */
 }
 
 .carousel-control-prev-icon,

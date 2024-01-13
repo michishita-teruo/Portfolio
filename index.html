@@ -144,9 +144,9 @@
             <div class="jumbotron">
                 <h1 class="section_title display-4 ">SKILL</h1>
                 <hr class="my-4">
-                <div class="d-flex justify-content-center row ">
+                <div class="d-block d-lg-flex justify-content-center container ">
 
-                    <dl class="bar-chart-001 col-lg-6">
+                    <dl class="bar-chart-001 col-lg-6 ">
                         <dt>HTML</dt>
                         <dd style="width: 90%; background-color: #ca5430">90%</dd>
                         <dt>CSS</dt>
@@ -165,17 +165,18 @@
                         <dd style="width: 60%; background-color: #ea9e56">60%</dd>
                     </dl>
 
-                    <div class="col-lg-6 row d-flex align-items-center flex-wrap gap-4">
-                        <!--  -->
-
-                        <div class="pie-chart-002">
+                    <div class="row d-flex align-items-center flex-wrap col-lg-6 gap-4 w-ms-50">
+                        
+                        <!-- html -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right" data-bs-content="基本的なHTML構造を理解し、複雑なセクションやフォーム構造も構築可能"
                                 data-bs-original-title="" title="">
                                 <img src="./img/icon/html5.com.png" alt="html.icon" class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- css -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="レスポンシブデザイン、アニメーション、フレキシブルボックスなどの高度なCSS機能を扱い、スタイルの一貫性を保つ能力がある"
@@ -183,7 +184,8 @@
                                 <img src="./img/icon/css.com.png" alt="css.icon" class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- js -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="DOM操作、非同期処理、イベントハンドリングなどの基本的なJavaScript概念を理解できる"
@@ -192,7 +194,8 @@
                                     class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- php -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="PHPの基本構文や基本的なデータベース連携が理解できるが、まだ高度なトピックやセキュリティ対策に向けて学習が必要。"
@@ -200,7 +203,8 @@
                                 <img src="./img/icon/php.png" alt="php.icon" class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- jQuery -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="jQueryを使用してDOMの操作やイベントハンドリングができ、基本的なアニメーションやエフェクトも実装可能"
@@ -208,7 +212,8 @@
                                 <img src="./img/icon/jQuery.png" alt="jQuery.icon" class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- BS -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="Bootstrapを使用してレスポンシブなウェブサイトの構築ができ、各コンポーネントの適切な利用ができる"
@@ -216,7 +221,8 @@
                                 <i class="bi bi-bootstrap-fill" style="font-size: 2rem;"></i>
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- figma -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right"
                                 data-bs-content="Figmaを使用してデザインの基本的な作成とコラボレーションができるが、まだ高度なデザイン機能に慣れる必要がある"
@@ -224,7 +230,8 @@
                                 <img src="./img/icon/figma.png" alt="figmai.con" class="skill_icon img-fluid ">
                             </button>
                         </div>
-                        <div class="pie-chart-002">
+                        <!-- stablediffusion -->
+                        <div class="pie-chart-002 col-xl-3 col-sm-4 mx-4">
                             <button type="button" class="btn skillbtn" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="right" data-bs-content="StableDiffusionのライブラリを使用しテーマに沿った簡単なAI画像生成が可能"
                                 data-bs-original-title="" title="">
@@ -244,8 +251,8 @@
             <h1 class="section_title display-4 ">My Works</h1>
             <p class="lead">制作物</p>
             <div class="row">
-                <!-- Work Item 01 -->
-                <div class="col-lg-4 col-md-6 mb-4 order-2">
+                <!-- Work Item 01  北関東水族館-->
+                <div class="col-lg-4 col-md-6 mb-4 order-3">
                     <div class="card">
                         <div class="card h-100">
                             <article>
@@ -413,8 +420,8 @@
                 </div>
                 <!-- Work Item 01 end-->
 
-                <!-- Work Item 02 -->
-                <div class="col-lg-4 col-md-6 mb-4 order-3">
+                <!-- Work Item 02 北関東学院 -->
+                <div class="col-lg-4 col-md-6 mb-4 order-5">
                     <div class="card">
                         <div class="card h-100">
                             <article>
@@ -566,7 +573,7 @@
                 </div>
                 <!-- Work Item 02 end-->
 
-                <!-- Work Item 03 -->
+                <!-- Work Item 03 Windows風 -->
                 <div class="col-lg-4 col-md-6 mb-4 order-1">
                     <div class="card">
                         <div class="card h-100">
@@ -723,7 +730,7 @@
                 </div>
                 <!-- Work Item 03 end-->
 
-                <!-- Work Item 04 -->
+                <!-- Work Item 04 ドラクエクイズ -->
                 <div class="col-lg-4 col-md-6 mb-4 order-4">
                     <div class="card">
                         <div class="card h-100">
@@ -795,7 +802,7 @@
                                         <div class="modal-header">
 
                                             <div class="d-flex justify-content-between w-100">
-                                                <h5 class="modal-title"><strong>no website</strong></h5>
+                                                <h5 class="modal-title"><strong>ドラクエクイズ</strong></h5>
                                                 <button type="button" class="btn btn-default"
                                                     data-bs-dismiss="modal">&times;</button>
                                             </div>
@@ -889,8 +896,8 @@
                 </div>
                 <!-- Work Item 04 end-->
 
-                <!-- Work Item 05 -->
-                <div class="col-lg-4 col-md-6 mb-4 order-last">
+                <!-- Work Item 05 Mocamocarons -->
+                <div class="col-lg-4 col-md-6 mb-4 order-2">
                     <div class="card">
                         <div class="card h-100">
                             <article>
@@ -900,22 +907,23 @@
                                             class="active">
                                         </li>
                                         <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"></li>
-                                        <!-- <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"></li>
-                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"></li> -->
+                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" data-interval="3000">
-                                            <img class="d-block w-100" src="./img/no_image_logo.png" alt="First slide">
-                                        </div>
-                                        <!-- <div class="carousel-item" data-interval="3000">
-                                            <img class="d-block w-100"
-                                                src="./img/kitakantougakuin/kitakantougakuin02.jpg" alt="Second slide">
+                                            <img class="d-block w-100" src="./img/macarons/macaron1.png"
+                                                alt="First slide">
                                         </div>
                                         <div class="carousel-item" data-interval="3000">
-                                            <img class="d-block w-100"
-                                                src="./img/kitakantougakuin/kitakantougakuin03.jpg" alt="Third slide">
-                                    </div> -->
-                                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators5"
+                                            <img class="d-block w-100" src="./img/macarons/macaron2.png"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item" data-interval="3000">
+                                            <img class="d-block w-100" src="./img/macarons/macaron3.png"
+                                                alt="Third slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators5"
                                             role="button" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only"></span>
@@ -924,13 +932,13 @@
                                             role="button" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only"></span>
-                                        </a> -->
+                                        </a>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title"><strong>no website</strong></h5>
+                                        <h5 class="card-title"><strong>Mocamocarons</strong></h5>
                                         <p class="card-text">
-                                            <strong>制作時間：</strong>約42時間（WEB制作を始めてから2ヶ月目）<br>
-                                            <strong>コンセプト：</strong>既存の職業訓練校のウェブ...
+                                            <strong>制作時間：</strong>約24時間（WEB制作を始めてから4ヶ月目）<br>
+                                            <strong>コンセプト：</strong>デザインカンプに沿った...
                                         </p>
                                     </div>
                                     <div class="d-flex justify-content-center mb-3">
@@ -949,7 +957,7 @@
                                         <div class="modal-header">
 
                                             <div class="d-flex justify-content-between w-100">
-                                                <h5 class="modal-title"><strong>no website</strong></h5>
+                                                <h5 class="modal-title"><strong>Mocamocarons</strong></h5>
                                                 <button type="button" class="btn btn-default"
                                                     data-bs-dismiss="modal">&times;</button>
                                             </div>
@@ -958,13 +966,16 @@
 
                                             <div class="row">
                                                 <div class="col">
-                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                    <img src="./img/macarons/macaron1.png" class="img-fluid"
+                                                        alt="no_photo">
                                                 </div>
                                                 <div class="col d-none d-sm-block">
-                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                    <img src="./img/macarons/macaron3.png" class="img-fluid"
+                                                        alt="no_photo">
                                                 </div>
                                                 <div class="col d-none d-lg-block">
-                                                    <img src="./img/no_image_logo.png" class="img-fluid" alt="no_photo">
+                                                    <img src="./img/macarons/macaron4.png" class="img-fluid"
+                                                        alt="no_photo">
                                                 </div>
                                             </div>
                                             <div class="card-body">
@@ -974,7 +985,7 @@
                                                         <strong>制作時間：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        約42時間（WEB制作を始めてから2ヶ月目）
+                                                        約24時間（WEB制作を始めてから4ヶ月目）
                                                     </div>
                                                 </div>
                                                 <div class="row my-3">
@@ -982,7 +993,7 @@
                                                         <strong>コンセプト：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        既存の職業訓練校のウェブサイトから新規リニューアルする。制作中に改善計画書を作り、完成後に他の受講生に修正点とフィードバックをもらう。
+                                                        デザインカンプに沿ったマカロンの通販サイトの作成。デザイナーよりデザインカンプと画像素材は支給されたものとしてコーディングしました。
                                                     </div>
                                                 </div>
                                                 <div class="row my-3">
@@ -990,8 +1001,8 @@
                                                         <strong>特徴：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        メインビジュアルには若い年齢層を取り込めるように漫画風のAI画像を生成して、VEGA2のjQueryを用いて表示しています。
-                                                        Javascriptでメインビジュアルに出現するタイプライター式テキストを10種類の中からランダムに表示させています。
+                                                        index 1枚とpickup 1枚の構成 レスポンシブ対応済み
+                                                        pickupと商品一覧（マカロン一覧）の部分はslickSliderを使用しています。
                                                     </div>
                                                 </div>
                                                 <div class="row my-3">
@@ -999,7 +1010,7 @@
                                                         <strong>改善点：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        制作期間内にレスポンシブ対応したハンバーガーメニューの作成が間に合わなかった。現在は修正済み
+                                                        デザインカンプにはありませんが店舗ページやNewsページなど、まだ作りこみできる所がある点
                                                     </div>
                                                 </div>
                                                 <div class="row my-3">
@@ -1007,7 +1018,7 @@
                                                         <strong>苦労した点：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        jQueryのslideToggleの理解に時間がかかった為、期間内にレスポンシブ対応まで完成しなかった。
+                                                        コーディング中にCSSフレームワークのBootstrapで書くかCSSで書くか迷う所があり、適材適所にすぐに判断できないところがある。
                                                     </div>
                                                 </div>
                                                 <div class="row my-3">
@@ -1015,13 +1026,44 @@
                                                         <strong>学び：</strong>
                                                     </div>
                                                     <div class="col-sm-9">
-                                                        制作を通じて、新たな技術の理解に時間を十分に確保することの重要性を学びました。
+                                                        制作物の数をもっと増やし構成に慣れてなにが適切かすぐに判断できるようにしてきたい。
+                                                    </div>
+                                                </div>
+
+                                                <div class="row my-3">
+                                                    <div class="col-sm-3 text-sm-end">
+                                                        <strong>デザインカンプ：</strong>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <a class="btn hover-border" target="_blank"
+                                                            href="./img/macarons/macarons_pc_1.html">
+                                                            <img class="card-img" src="./img/macarons/Web 1920_1.jpg"
+                                                                alt="">PCSize1<br>別タブで表示
+                                                        </a>
+                                                        <a class="btn hover-border" target="_blank"
+                                                            href="./img/macarons/macarons_pc_2.html">
+                                                            <img class="card-img" src="./img/macarons/Web 1920_2.jpg"
+                                                                alt="">PCSize2<br>別タブで表示
+                                                        </a>
+                                                        <a class="btn hover-border" target="_blank"
+                                                            href="./img/macarons/macarons_mobile_1.html">
+                                                            <img class="card-img"
+                                                                src="./img/macarons/iPhone 14 Pro_1.jpg"
+                                                                alt="">MobileSize2<br>別タブで表示
+                                                        </a>
+                                                        <a class="btn hover-border" target="_blank"
+                                                            href="./img/macarons/macarons_pc_2.html">
+                                                            <img class="card-img"
+                                                                src="./img/macarons/iPhone 14 Pro_2.jpg"
+                                                                alt="">MobileSize2<br>別タブで表示
+                                                        </a>
                                                     </div>
                                                 </div>
 
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="https://michishita-teruo.github.io/KITAKANTO2/"
-                                                        class="btn btn-primary">サイトを確認</a>
+                                                    <a target="_blank"
+                                                        href="https://michishita-teruo.github.io/macarons/index.html"
+                                                        class="btn btn-primary">別タブでサイトを確認</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1381,7 +1423,7 @@
     <!-- プログレスバー -->
     <div id="progress"></div>
     <!-- contact -->
-    <a href="#contact">
+    <a href="#contact" class="d-inline">
         <div id="contact_icon">
             <span class="contact_icon_inner"></span>
             <img src="./img/CONTACT.png" alt="">
@@ -1390,7 +1432,7 @@
 
     <!-- section profile end -->
 
-    <footer class="footer mt-5 py-3 bg-dark" style="background-color: #96ada9;">
+    <footer class="footer py-5 bg-dark" style="background-color: #96ada9;">
         <div class="container">
             <span class="text-white text-center">Thank you for watching all the way until the end.</span>
         </div>

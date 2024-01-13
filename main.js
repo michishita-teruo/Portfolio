@@ -31,6 +31,27 @@ $(function () {
     webStorage();
 });
 
+// data-bs-content
+
+// ページのどこかがクリックされたときに実行される関数
+function hideAllPopovers() {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(function (popoverTriggerEl) {
+        var popoverInstance = bootstrap.Popover.getInstance(popoverTriggerEl);
+        if (popoverInstance) {
+            popoverInstance.hide();
+        }
+    });
+}
+
+// ドキュメント全体に対してクリックイベントリスナーを設定
+document.addEventListener('click', function (e) {
+    // クリックされた要素がポップオーバートリガーでない場合、全てのポップオーバーを非表示にする
+    if (!e.target.matches('[data-bs-toggle="popover"]')) {
+        hideAllPopovers();
+    }
+}, true);
+
 
 // ----------------- nav_click -----------------
 $(document).on('click', '.nav-link', function (event) {
