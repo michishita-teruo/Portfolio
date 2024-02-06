@@ -100,7 +100,7 @@ $(document).on('click', '.navbar-collapse.show', function (e) {
 
 
 //----------------- Bootstrap reset -----------------
-var carouselIds = ['#carouselExampleIndicators', '#carouselExampleIndicators2', '#carouselExampleIndicators3', '#carouselExampleIndicators4', '#carouselExampleIndicators5', '#carouselExampleIndicators6'];
+var carouselIds = ['#carouselExampleIndicators', '#carouselExampleIndicators2', '#carouselExampleIndicators3', '#carouselExampleIndicators4', '#carouselExampleIndicators5', '#carouselExampleIndicators6','#carouselExampleIndicators7'];
 carouselIds.forEach(function (id) {
     var myCarousel = document.querySelector(id);
     var carousel = new bootstrap.Carousel(myCarousel, {
